@@ -26,7 +26,7 @@ namespace SIIXPATM.Vistas
             AbsoluteLayout.SetLayoutFlags(splash,AbsoluteLayoutFlags.PositionProportional);
             AbsoluteLayout.SetLayoutBounds(splash, new Rectangle(0.5, 0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
             sub.Children.Add(splash);
-            this.BackgroundColor = Color.FromHex("#492de3");
+            this.BackgroundColor = Color.White;
             this.Content = sub;
         }
 

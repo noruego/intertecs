@@ -2,6 +2,7 @@
 using Intertecs.WebServices;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -40,6 +41,7 @@ namespace Intertecs.Vistas
                 FontSize = 16,
                 TextColor = Color.Black
             };
+            sr_inst.TextChanged += (sender, e) => buscarInstitucion(sr_inst.Text);
             DataTemplate celda = new DataTemplate(typeof(ImageCell));
             celda.SetBinding(TextCell.TextProperty, "institution");
             celda.SetValue(TextCell.TextColorProperty,Color.Gray);
@@ -52,6 +54,14 @@ namespace Intertecs.Vistas
                 HasUnevenRows = true, //Estandarizar items
                 ItemTemplate = celda
             };
+            lv_inst.ItemSelected += (sender, e) =>
+             {
+
+                 Institucion objIns = (Institucion)e.SelectedItem;
+                 DisplayAlert("Itemselected",objIns.institution, "Aceptar");
+                 //Agregar con settings 
+                 //App.Current.MainPage = new Torneo();
+             };
             bv_div = new BoxView()
             {
                 Color               = Color.Green,
@@ -66,6 +76,13 @@ namespace Intertecs.Vistas
                 TextColor = Color.Gray,
                 FontFamily ="Roboto"
             };
+            var tapr = new TapGestureRecognizer();
+            tapr.Tapped += (sender, e) =>
+            {
+                DisplayAlert("error","selecciono inguno","aceptar");
+                //asignar ciertas carcateristicas de un tecnologico especifico
+            };
+            lb_ninguno.GestureRecognizers.Add(tapr);
             lb_seguir = new Label()
             {
                 HorizontalTextAlignment = TextAlignment.Center,
@@ -102,6 +119,18 @@ namespace Intertecs.Vistas
             Content = st_inst;
         }
 
+        private void buscarInstitucion(string institucion)
+        {
+            if(!string.IsNullOrWhiteSpace(institucion))
+            {
+                lv_inst.ItemsSource = list_inst.Where(x=>x.institution.ToLower().Contains(institucion.ToLower()));
+            }
+            else
+            {
+                lv_inst.ItemsSource = list_inst;
+            }
+        }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -114,6 +143,11 @@ namespace Intertecs.Vistas
             ai_inst.IsVisible = false;
             lv_inst.IsVisible = true;
 
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            DisplayAlert("UPS!", "selecciona una institución", "Aceptar");
+            return true;
         }
 
     }
