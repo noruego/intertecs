@@ -20,6 +20,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Modelos\Institucion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\InstitucionesPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\SplashPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebServices\WSInstitution.cs" />

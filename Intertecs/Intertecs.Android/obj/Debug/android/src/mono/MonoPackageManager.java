@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"Intertecs.Android.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

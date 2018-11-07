@@ -58,7 +58,14 @@ namespace Intertecs.Vistas
              {
 
                  Institucion objIns = (Institucion)e.SelectedItem;
-                 DisplayAlert("Itemselected",objIns.institution, "Aceptar");
+                 
+                 Settings.Settings.institucionName = objIns.institution;
+                 Settings.Settings.institucionShortName = objIns.short_name;
+                 Settings.Settings.institucionLogo = objIns.logo;
+
+                 DisplayAlert("Itemselected", Settings.Settings.institucionName+"\n"+
+                     Settings.Settings.institucionShortName + "\n" 
+                     + Settings.Settings.institucionLogo + "\n", "Aceptar");
                  //Agregar con settings 
                  //App.Current.MainPage = new Torneo();
              };

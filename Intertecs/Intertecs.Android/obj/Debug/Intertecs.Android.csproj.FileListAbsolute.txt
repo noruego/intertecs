@@ -96,7 +96,15 @@ c:\users\israel-moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\De
 c:\users\israel-moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\android\assets\System.Xml.pdb
 c:\users\israel-moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 c:\users\israel-moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\bin\Debug\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\bin\Debug\Plugin.Settings.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Plugin.Settings.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\android\assets\Plugin.Settings.dll.mdb
 C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\bin\Debug\Intertecs.Android.dll
 C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Intertecs.Android.dll.mdb
 C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Plugin.Settings.dll.mdb
 C:\Users\Israel-Moreno\source\repos\Intertecs\Intertecs\Intertecs.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
