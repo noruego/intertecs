@@ -20,8 +20,15 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Modelos\Institucion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\MenuOpcion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\DashBoard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\Fondo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\Header.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\InstitucionesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\MenuDashBoard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\MenuDataOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\MenuListView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\SplashPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebServices\WSInstitution.cs" />
   </ItemGroup>

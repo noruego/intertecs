@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Intertecs.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -82,7 +83,17 @@ namespace Intertecs.Vistas
             );
             Master = menuPage;
             Detail = new NavigationPage(fondo);
-
         }
+        private void NavigationTo(MenuOpcion item)
+        {
+            Page pagina = (Page)Activator.CreateInstance(item.TargetType);//crear instancia de pagina
+            if(pagina.GetType().Name== "InstitucionesPage")
+            {
+                Detail = new NavigationPage(pagina);
+                IsPresented = false;  //Oculta el menu
+
+            }
+        }
+
     }
 }

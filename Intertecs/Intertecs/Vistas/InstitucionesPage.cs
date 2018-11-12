@@ -67,7 +67,7 @@ namespace Intertecs.Vistas
                      Settings.Settings.institucionShortName + "\n" 
                      + Settings.Settings.institucionLogo + "\n", "Aceptar");
                  //Agregar con settings 
-                 //App.Current.MainPage = new Torneo();
+                 App.Current.MainPage = new DashBoard();
              };
             bv_div = new BoxView()
             {
